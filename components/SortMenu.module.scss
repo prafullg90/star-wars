@@ -1,0 +1,64 @@
+.sortbykey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    position: relative;
+    background-color: lightgray;
+    border-radius: 4px;
+    height: 40px;
+    border: solid darkgray 1px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .mainSortMenu {
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        width: 200px;
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.5);
+
+        .mainSortDescription {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.5);
+            cursor: default;
+
+            .clearText {
+                line-height: 28px;
+                border-bottom: solid lightgray 0.5px;
+                padding: 0px 12px;
+                box-sizing: border-box;
+                color: red;
+            }
+
+          
+        }
+
+        .clear-sorting {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .mainSortoption {
+            line-height: 28px;
+            border-bottom: solid lightgray 0.5px;
+            padding: 0px 12px;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: lightgray;
+                cursor: pointer;
+            }
+        }
+    }
+}
